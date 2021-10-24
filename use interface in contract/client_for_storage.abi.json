@@ -1,0 +1,58 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "renderHelloWorld",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "renderHelloWorld_1",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "store",
+			"inputs": [
+				{"name":"current_storage","type":"address"},
+				{"name":"val","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sample1",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sample1","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"sample1","type":"uint256"},
+		{"name":"sample2","type":"uint256"}
+	]
+}

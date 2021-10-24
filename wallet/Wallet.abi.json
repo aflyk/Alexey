@@ -1,0 +1,84 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "create_token",
+			"inputs": [
+				{"name":"card_name","type":"string"},
+				{"name":"rare","type":"bool"},
+				{"name":"zone","type":"uint8"},
+				{"name":"damage","type":"uint8"},
+				{"name":"support","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "set_price",
+			"inputs": [
+				{"name":"price","type":"uint256"},
+				{"name":"card_name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendTrancfer_comission_by_recipient",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"value","type":"uint128"},
+				{"name":"bounce","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendTrancfer_comission_by_owner",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"value","type":"uint128"},
+				{"name":"bounce","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "send_all_resources",
+			"inputs": [
+				{"name":"dest","type":"address"},
+				{"name":"value","type":"uint128"},
+				{"name":"bounce","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "tokensArr",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"card_name","type":"string"},{"name":"rare","type":"bool"},{"name":"zone","type":"uint8"},{"name":"damage","type":"uint8"},{"name":"support","type":"bool"},{"name":"price","type":"uint256"}],"name":"tokensArr","type":"tuple[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"card_name","type":"string"},{"name":"rare","type":"bool"},{"name":"zone","type":"uint8"},{"name":"damage","type":"uint8"},{"name":"support","type":"bool"},{"name":"price","type":"uint256"}],"name":"tokensArr","type":"tuple[]"},
+		{"name":"token_owner","type":"map(uint256,uint256)"}
+	]
+}
